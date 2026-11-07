@@ -13,14 +13,14 @@ def validar_numero(texto):
     return texto.replace(".", "", 1).isdigit()
 
 
-# Función para calcular los sueldos
+# Función para calcular los ALGOTIHMICS
 def calcular():
     try:
-        sueldo1 = float(entrada1.get())
-        sueldo2 = float(entrada2.get())
-        sueldo3 = float(entrada3.get())
+        sueldoP1 = float(entrada1.get())
+        sueldoP2 = float(entrada2.get())
+        sueldoP3 = float(entrada3.get())
 
-        total = sueldo1 + sueldo2 + sueldo3
+        total = sueldoP1 + sueldoP2 + sueldoP3
         promedio = total / 3
 
         resultado.config(
