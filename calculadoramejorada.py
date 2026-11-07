@@ -2,7 +2,11 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# Función para permitir solo números y un punto decimal
+
+
+
+
+
 def validar_numero(texto):
     if texto == "":
         return True
@@ -19,9 +23,9 @@ def calcular():
         sueldoP1 = float(entrada1.get())
         sueldoP2 = float(entrada2.get())
         sueldoP3 = float(entrada3.get())
-
-        total = sueldoP1 + sueldoP2 + sueldoP3
-        promedio = total / 3
+        
+        total = sueldoP1 + sueldoP2 
+        promedio = total / 2
 
         resultado.config(
             text=f"Total: ${total:.2f}\nPromedio: ${promedio:.2f}"
@@ -38,7 +42,7 @@ def calcular():
 def limpiar():
     entrada1.delete(0, tk.END)
     entrada2.delete(0, tk.END)
-    entrada3.delete(0, tk.END)
+  
     resultado.config(text="Total: $0.00")
 
 
@@ -72,12 +76,7 @@ entrada2 = tk.Entry(
 )
 entrada2.pack()
 
-tk.Label(ventana, text="Sueldo trabajador 3:").pack()
-entrada3 = tk.Entry(
-    ventana, validate="key",
-    validatecommand=(validacion, "%P")
-)
-entrada3.pack()
+
 
 # Botones
 tk.Button(
