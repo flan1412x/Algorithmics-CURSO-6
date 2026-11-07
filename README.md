@@ -1,2 +1,5 @@
 # Algorithmics-CURSO-6
 Clase de introducción a GIT y GITHUB
+Este es mi primer REPOSITORIO EN GITHUB 
+SOMOS DE ALGORITHMICS AMBATO
+ME LLAMO FRANK <3
